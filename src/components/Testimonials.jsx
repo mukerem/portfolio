@@ -59,7 +59,7 @@ export default function Testimonials() {
       vp.removeEventListener('mouseenter', pause);
       vp.removeEventListener('mouseleave', resume);
     };
-  }, [active]);               // re-create interval after each slide change
+  }, [next]);
 
   /* ------------------------------------------------------------ */
   return (
