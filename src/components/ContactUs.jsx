@@ -1,6 +1,3 @@
-// ────────────────────────────────────────────────────────────────
-//  src/components/ContactUs.jsx   (with EmailJS integration)
-// ────────────────────────────────────────────────────────────────
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import '../styles/ContactUs.css';

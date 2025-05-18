@@ -1,4 +1,3 @@
-// src/components/Blog.jsx
 import React from 'react';
 import '../styles/Blog.css';
 

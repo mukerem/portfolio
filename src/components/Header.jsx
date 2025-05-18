@@ -1,4 +1,3 @@
-// src/components/Header.jsx
 import React from 'react';
 import '../styles/Header.css';
 import Logo from '../assets/logo.png';
