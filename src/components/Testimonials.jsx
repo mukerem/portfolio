@@ -168,7 +168,7 @@ const testimonials = [
 const Header = () => (
   <div className="mb-12 text-center">
     <div className="inline-flex items-center rounded-full text-xs mb-3 px-4 py-1.5 bg-primary-50/50 dark:bg-primary-900/20 text-primary-600 dark:text-primary-400 font-medium">
-      CLIENT&nbsp;FEEDBACK
+      FEEDBACK
     </div>
     <h2 className="text-3xl md:text-4xl font-bold relative inline-block pb-2">
       Testimonials

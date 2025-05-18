@@ -27,12 +27,12 @@ const About = () => (
           <strong>Python</strong> daily to solve complex algorithmic problems and ensure model alignment and data quality.
         </p>
 
-        {/* Cofounder / Toptech / FamilySooq */}
+        {/* Cofounder / Toptech / Seleda */}
         <p>
           As co‑founder of <strong>Toptech IT Solutions</strong> (Addis Ababa) I guide multi‑disciplinary teams building
           products for African businesses. Flagship project:{' '}
-          <a href="https://familysooq.com/" target="_blank" rel="noreferrer">
-            <strong>FamilySooq</strong>
+          <a href="https://seleda.et/" target="_blank" rel="noreferrer">
+            <strong>Seleda</strong>
           </a>
           &nbsp;— a multi‑tenant e‑commerce marketplace whose micro‑service backend and payment‑gateway integrations I
           architected from the ground up.
@@ -54,7 +54,7 @@ const About = () => (
           >
             <strong>Andalus Judge</strong>
           </a>{' '}
-          — the first Ethiopian online judge — automating compilation, execution and scoring for thousands of student
+          — the first Ethiopian competitive programming judge — automating compilation, execution and scoring for thousands of student
           submissions every week.
         </p>
 

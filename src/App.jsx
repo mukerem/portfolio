@@ -15,7 +15,7 @@ import CommunityInvolvement from './components/CommunityInvolvement';
 import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 import BackgroundBlobs from './components/BackgroundBlobs';
-import ScrollToTop from './components/ScrollToTop';    // ⬅️  NEW
+import ScrollToTop from './components/ScrollToTop';
 import useInitTheme from './hooks/useInitTheme';
 
 function App() {

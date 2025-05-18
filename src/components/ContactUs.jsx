@@ -19,11 +19,15 @@ const ContactUs = () => {
     setStatus(null);
 
     try {
+      const SERVICE_ID  = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+      const TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+      const PUBLIC_KEY  = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+
       await emailjs.sendForm(
-        'service_xlm717c', 
-        'template_e9wlsmc',
+        SERVICE_ID,
+        TEMPLATE_ID,
         formRef.current,
-        'ZVSXT8gMHXmpQQTBV'  
+        PUBLIC_KEY
       );
       formRef.current.reset();
       setStatus('success');

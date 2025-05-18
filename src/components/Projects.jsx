@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import '../styles/Projects.css';
 
+const tabs = ['All', 'Web', 'AI/ML', 'Open Source', 'Desktop'];
+
 /* ════════════════════════════════════════
    1  · PROJECT DATA  (priority ↓ bottom)
    ════════════════════════════════════════ */
@@ -8,15 +10,15 @@ import '../styles/Projects.css';
    const PROJECTS = [
   /* ――――――― LIVE PRODUCTS ――――――――― */
   {
-    title: 'FamilySooq Classified',
+    title: 'Seleda Classified',
     tag: 'Backend',
     img: './static/familysooq2.png',
     client: 'Toptech IT Solutions',
     short: 'A modern Ethiopian marketplace platform that enables buyers and sellers to easily trade goods and services with integrated local payments and real-time communication.',
     long: `
-FamilySooq is a modern, user-friendly online marketplace built for the Ethiopian
-market, providing a platform where wholesalers, retailers, and individual
-users can trade goods and services with ease. The system was designed with
+Seleda, formerly known as FamilySooq, is a modern, user-friendly online marketplace 
+tailored for the Ethiopian market, enabling wholesalers, retailers, and individual 
+users to trade goods and services with ease. The system was designed with
 seamless integration of local payment gateways such as TeleBirr and Amole,
 enabling users to make transactions effortlessly. To enhance user interaction,
 the platform also includes SMS and messaging integrations, allowing buyers and
@@ -27,7 +29,8 @@ background task management and scheduling. The frontend was built with React,
 offering a dynamic and responsive user interface. The entire stack was
 containerized using Docker, ensuring scalability and efficient service orchestration.`,
     tech: ['Django RestFramework', 'PostgreSQL', 'React', 'Docker', 'TeleBirr API', 'Redis', 'Celery'],
-    link: 'https://familysooq.com/',
+    link: 'https://seleda.et/',
+    category: 'Web',
     priority: 1,
   },
   {
@@ -44,6 +47,7 @@ inefficiencies of traditional wholesale methods, making it easier for businesses
 and collaborate with their ideal partners.`,
     tech: ['Javascript', 'CSS', 'PostgreSQL'],
     link: 'https://afrimerkato.com/',
+    category: 'web',
     priority: 4,
   },
   {
@@ -58,6 +62,7 @@ transparent progress tracking. Added PayPal payment gateway and an admin
 dashboard for mentors and volunteers.`,
     tech: ['React', 'FastAPI', 'Paypal', 'TailwindCSS'],
     link: 'https://andaluscharity.org/',
+    category: 'Web',
     priority: 5,
   },
 
@@ -73,6 +78,7 @@ Provides easy server-side integration with Ethio-Telecom’s payment API.
 Used by several Ethiopian start-ups in production.`,
     tech: ['Python', 'PyPI', 'TeleBirr API'],
     link: 'https://pypi.org/project/telebirrweb/',
+    category: 'Open Source',
     priority: 6,
   },
   {
@@ -86,6 +92,7 @@ Pure-Python library for Ethiopian calendar maths — leap-year rules, date
 arithmetic, localisation strings. Powers calendar widgets in multiple apps.`,
     tech: ['Python', 'PyPI'],
     link: 'https://pypi.org/project/ethiocalendar/',
+    category: 'Open Source',
     priority: 7,
   },
   {
@@ -102,6 +109,7 @@ with Windows and Linux. The package is published on PyPI and has been actively u
 in ASTU’s internal lab sessions to support hands-on learning for beginner programmers.`,
     tech: ['Python', 'Graphics'],
     link: 'https://pypi.org/project/cs1andalus/',
+    category: 'Open Source',
     priority: 11,
   },
 
@@ -129,6 +137,7 @@ The front-end is built with HTML, CSS, JS, and Bootstrap. The system is actively
 training at ASTU and is being scaled to support broader use across universities.`,
     tech: ['Python', 'Django-REST', 'Redis', 'PostgreSQL', 'Flask', 'Celery'],
     link: 'https://github.com/mukerem/Andalus',
+    category: 'Web',
     priority: 2,
   },
   {
@@ -147,6 +156,7 @@ based on the configuration. This setup was used to validate the API’s performa
 Technologies used include Python, Django, DRF, PostgreSQL, Docker, Docker Compose, and Postman.`,
     tech: ['Python', 'Django-REST', 'Postman', 'PostgreSQL'],
     link: 'https://github.com/mukerem/SocialNetwork',
+    category: 'Web',
     priority: 8,
   },
   {
@@ -161,6 +171,7 @@ courses taken and what courses are left from which semester for 2020 Adama Scien
 and Technology University Computer Science and Engineering Department students.`,
     tech: ['Django', 'Bootstrap', 'AJAX'],
     link: 'https://github.com/mukerem/courseaudit',
+    category: 'Web',
     priority: 9,
   },
 
@@ -180,6 +191,7 @@ accurate day-of-week calculations and date alignment across calendar systems. Ad
 offers printable timetable views, making it useful for academic or scheduling purposes.`,
     tech: ['Java', 'Swing', 'JUnit'],
     link: 'https://github.com/mukerem/CalendarConversion',
+    category: 'Desktop',
     priority: 13,
   },
 
@@ -200,6 +212,7 @@ https://doi.org/10.1155/2022/8515810. A Telegram bot was later integrated as a d
 for testing the model in real-world use cases.`,
     tech: ['Deep Learning', 'CNN', 'TensorFlow', 'Telegram Bot'],
     link: 'https://github.com/mukerem/AmharicHandwrittenDigitRecognitionCNN',
+    category: 'AI/ML',
     priority: 3,
   },
   {
@@ -213,6 +226,7 @@ The chatbot provides basic information about Adama Science and Technology Univer
 and can interact with users and supply that information when asked.`,
     tech: ['Chat Script'],
     link: 'https://github.com/mukerem/ASTUChatBot',
+    category: 'AI/ML',
     priority: 12,
   },
   {
@@ -230,6 +244,7 @@ each student. This helps students make informed decisions about their academic p
 on both their performance and personal context.`,
     tech: ['Data Analysis', 'Pandas', 'Scikit-learn', 'Matplotlib'],
     link: 'https://github.com/mukerem/student-performance-prediction',
+    category: 'AI/ML',
     priority: 10,
   },
 ];
@@ -239,10 +254,15 @@ on both their performance and personal context.`,
    ════════════════════════════════════════ */
 export default function Projects() {
   const [active, setActive] = useState(null);
+  const [activeTab, setActiveTab] = useState("All");
   const ordered = [...PROJECTS].sort((a, b) => a.priority - b.priority);
 
+  const filtered = activeTab === 'All'
+  ? ordered
+  : ordered.filter(p => p.category === activeTab);
+
   return (
-    <section id="portfolio" className="py-20 relative overflow-hidden">
+    <section id="project" className="py-20 relative overflow-hidden">
       {/* decorative blob */}
       <div aria-hidden className="absolute inset-0 pointer-events-none">
         <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-primary-100/60 dark:bg-primary-900/20 rounded-full blur-3xl" />
@@ -251,8 +271,10 @@ export default function Projects() {
       <div className="container mx-auto px-4 max-w-6xl">
         <Header />
 
+        <ProjectTab tabs={tabs} setActiveTab={setActiveTab} activeTab={activeTab}/>
+
         <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          {ordered.map((p) => (
+          {filtered.map((p) => (
             <ProjectCard key={p.title} project={p} onOpen={() => setActive(p)} />
           ))}
         </div>
@@ -278,6 +300,25 @@ function Header() {
       </h2>
     </header>
   );
+}
+
+function ProjectTab({tabs, setActiveTab, activeTab}){
+  return (
+    <div className="flex flex-wrap gap-2 justify-center mb-8">
+      {tabs.map((cat) => (
+        <button
+          key={cat}
+          onClick={() => setActiveTab(cat)}
+          className={`px-4 py-2 rounded-full text-sm font-medium border transition 
+            ${activeTab === cat 
+              ? 'bg-blue-600 text-white border-primary-600' 
+              : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-100'}`}
+        >
+          {cat}
+        </button>
+      ))}
+    </div>
+  )
 }
 
 function ProjectCard({ project, onOpen }) {

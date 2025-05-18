@@ -4,14 +4,14 @@ import '../styles/CommunityInvolvement.css';
 
 const events = [
   {
-    type: 'Podcast',
+    type: 'Dev Dialog',
     color: 'purple',
-    title: 'Dagu',
-    img: './static/podcast-with-dagu.jpg',
+    title: 'AASTU Dev Dialog (GDG)',
+    img: './static/aastu-dev-dialog.jpg',
     blurb:
-      'Presented on the craft of software engineering and the journey from competitive programming to backend development at scale.',
+      'Presented on competitive programming, sharing key strategies, challenges, and insights from international experience in the field.',
     cta: 'Event details',
-    url: 'https://t.me/curiousiTea/1690',
+    url: 'https://t.me/DSCAASTU/594',
   },
   {
     type: 'Podcast',
@@ -19,29 +19,49 @@ const events = [
     title: 'Resala Podcast',
     img: './static/resala-podcast-part-1.jpg',
     blurb:
-      'Presented Part 1 as a guest speaker, covering AI, university life, my tutorial journey, career path, technology, and personal experiences.',
-    cta: 'Listen to episode',
+      'Presented as a guest speaker, covering AI, university life, my tutorial journey, career path, technology, and personal experiences.',
+    cta: 'Listen to podcast',
     url: 'https://youtu.be/50hMUsZq9qI?feature=shared/',
   },
   {
-    type: 'Podcast',
-    color: 'blue',
-    title: 'Resala Podcast',
-    img: './static/resala-podcast-part-2.jpg',
+    type: 'Panel Discussion',
+    color: 'green',
+    title: 'DevFest Addis Ababa Student Edition',
+    img: './static/GDSC-panel-discussion.jpg',
     blurb:
-      'Presented Part 2 as a guest speaker, covering AI, university life, my tutorial journey, career path, technology, and personal experiences.',
-    cta: 'Listen to episode',
-    url: 'https://youtu.be/xm1_h2VLEcw?feature=shared/',
+      'I shared insights on breaking into the tech industry, emerging trends, essential skills, and my journey to inspire aspiring professionals.',
+    cta: 'Event details',
+    url: 'https://t.me/DSCAASTU/620/',
   },
   {
     type: 'Dev Dialog',
     color: 'green',
-    title: 'AASTU Dev Dialog (GDG)',
-    img: './static/aastu-dev-dialog.jpg',
+    title: "AASTU Tech Fest 2024",
+    img: './static/dev-fest-2024-2.jpg',
     blurb:
-      'Presented on competitive programming, sharing key strategies, challenges, and insights from international experience in the field.',
+      'I shared my journey from a university club enthusiast to working with top global tech companies, co-founding startup, and contributing to the growth of my local tech community.',
     cta: 'Event details',
-    url: 'https://t.me/DSCAASTU/594',
+    url: 'https://t.me/DSCAASTU/872',
+  },
+  {
+    type: 'Panel Discussion',
+    color: 'blue',
+    title: "GDSC St. Mary's University",
+    img: './static/GDSC-saint-mary-university.jpeg',
+    blurb:
+      'At the panel, I shared my journey from student to AI engineer and ICPC World Finalist, highlighting key lessons in skill-building, community engagement, and real-world tech impact.',
+    cta: 'Event details',
+    url: 'https://www.linkedin.com/posts/gdscsmu_yesterday-we-had-a-fantastic-panel-discussion-activity-7197499892766785536--ZZO?utm_source=share&utm_medium=member_desktop&rcm=ACoAACOQKLUBUkrihNz_CJhB-GrT6zcNsE1z1mk',
+  },
+    {
+    type: 'Podcast',
+    color: 'purple',
+    title: 'Rotract Lewet Club',
+    img: './static/podcast-with-dagu.jpg',
+    blurb:
+      'Presented on the craft of software engineering and the journey from competitive programming to backend development at scale.',
+    cta: 'Event details',
+    url: 'https://t.me/curiousiTea/1690',
   },
 ];
 
@@ -108,7 +128,7 @@ const CommunityInvolvement = () => (
             </div>
 
             {/* Link */}
-            <div className="flex items-center px-6 pb-6 pt-0">
+            <div className="flex items-center px-6 pb-6 pt-4">
               <a
                 href={url}
                 target="_blank"

@@ -79,15 +79,12 @@ const socials = [
 ];
 
 const navLinks = [
-  ['Home', '#home'],
   ['About', '#about'],
   ['Skills', '#skills'],
   ['Experience', '#experience'],
   ['Education', '#education'],
-  ['Projects', '#portfolio'],
-  ['Testimonials', '#testimonials'],
+  ['Projects', '#project'],
   ['Blogs', '#blog'],
-  ['Speaking Engagements', '#speaking-engagements'],
   ['Contact', '#contact'],
 ];
 
@@ -104,7 +101,7 @@ const Footer = () => (
         {/* name & title */}
         <div className="mb-8 text-center">
           <span className="font-bold text-2xl bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-secondary-600 block">
-            Mukere Ali
+            Mukerem Ali
           </span>
           <span className="text-gray-600 dark:text-gray-400 text-sm">AI Engineer & Senior Backend Developer</span>
         </div>
