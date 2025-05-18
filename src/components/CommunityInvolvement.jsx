@@ -7,7 +7,7 @@ const events = [
     type: 'Dev Dialog',
     color: 'purple',
     title: 'AASTU Dev Dialog (GDG)',
-    img: './static/aastu-dev-dialog.jpg',
+    img: './static/aastu-dev-dialog.webp',
     blurb:
       'Presented on competitive programming, sharing key strategies, challenges, and insights from international experience in the field.',
     cta: 'Event details',
@@ -17,7 +17,7 @@ const events = [
     type: 'Podcast',
     color: 'blue',
     title: 'Resala Podcast',
-    img: './static/resala-podcast-part-1.jpg',
+    img: './static/resala-podcast-part-1.webp',
     blurb:
       'Presented as a guest speaker, covering AI, university life, my tutorial journey, career path, technology, and personal experiences.',
     cta: 'Listen to podcast',
@@ -27,7 +27,7 @@ const events = [
     type: 'Panel Discussion',
     color: 'green',
     title: 'DevFest Addis Ababa Student Edition',
-    img: './static/GDSC-panel-discussion.jpg',
+    img: './static/GDSC-panel-discussion.avif',
     blurb:
       'I shared insights on breaking into the tech industry, emerging trends, essential skills, and my journey to inspire aspiring professionals.',
     cta: 'Event details',
@@ -37,7 +37,7 @@ const events = [
     type: 'Dev Dialog',
     color: 'green',
     title: "AASTU Tech Fest 2024",
-    img: './static/dev-fest-2024-2.jpg',
+    img: './static/dev-fest-2024-2.webp',
     blurb:
       'I shared my journey from a university club enthusiast to working with top global tech companies, co-founding startup, and contributing to the growth of my local tech community.',
     cta: 'Event details',
@@ -47,7 +47,7 @@ const events = [
     type: 'Panel Discussion',
     color: 'blue',
     title: "GDSC St. Mary's University",
-    img: './static/GDSC-saint-mary-university.jpeg',
+    img: './static/GDSC-saint-mary-university.webp',
     blurb:
       'At the panel, I shared my journey from student to AI engineer and ICPC World Finalist, highlighting key lessons in skill-building, community engagement, and real-world tech impact.',
     cta: 'Event details',
@@ -57,7 +57,7 @@ const events = [
     type: 'Podcast',
     color: 'purple',
     title: 'Rotract Lewet Club',
-    img: './static/podcast-with-dagu.jpg',
+    img: './static/podcast-with-dagu.webp',
     blurb:
       'Presented on the craft of software engineering and the journey from competitive programming to backend development at scale.',
     cta: 'Event details',

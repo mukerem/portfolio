@@ -12,7 +12,7 @@ const tabs = ['All', 'Web', 'AI/ML', 'Open Source', 'Desktop'];
   {
     title: 'Seleda Classified',
     tag: 'Backend',
-    img: './static/familysooq2.png',
+    img: './static/familysooq2.webp',
     client: 'Toptech IT Solutions',
     short: 'A modern Ethiopian marketplace platform that enables buyers and sellers to easily trade goods and services with integrated local payments and real-time communication.',
     long: `
@@ -36,7 +36,7 @@ containerized using Docker, ensuring scalability and efficient service orchestra
   {
     title: 'Afri-Merkato Wholesale',
     tag: 'E-commerce',
-    img: './static/afrimerkato.png',
+    img: './static/afrimerkato.webp',
     client: 'Afri-Merkato LLC',
     short: 'B2B online platform that connects manufacturers, distributors, wholesalers, and retailers to trade and network efficiently in one place.',
     long: `
@@ -53,7 +53,7 @@ and collaborate with their ideal partners.`,
   {
     title: 'Andalus Charity Website',
     tag: 'Web App',
-    img: './static/andaluscharity.png',
+    img: './static/andaluscharity.webp',
     client: 'Andalus Charity',
     short: 'Fund-raising & volunteer portal for orphan support.',
     long: `
@@ -70,7 +70,7 @@ dashboard for mentors and volunteers.`,
   {
     title: 'telebirrWeb',
     tag: 'Python Package',
-    img: './static/telebirrweb.png',
+    img: './static/telebirrweb.webp',
     client: 'Open-source',
     short: 'Python wrapper for TeleBirr Web API.',
     long: `
@@ -84,7 +84,7 @@ Used by several Ethiopian start-ups in production.`,
   {
     title: 'ethioCalendar',
     tag: 'Python Package',
-    img: './static/ethiocalendar.png',
+    img: './static/ethiocalendar.webp',
     client: 'Open-source',
     short: 'A Python package for handling Ethiopian calendar functionalities.',
     long: `
@@ -98,7 +98,7 @@ arithmetic, localisation strings. Powers calendar widgets in multiple apps.`,
   {
     title: 'cs1Andalus',
     tag: 'Python Package',
-    img: './static/cs1andalus.png',
+    img: './static/cs1andalus.webp',
     client: 'University project',
     short: 'CS1 graphical modules for education for Window and Linux in Python 3 and Python 2.',
     long: `
@@ -117,7 +117,7 @@ in ASTU’s internal lab sessions to support hands-on learning for beginner prog
   {
     title: 'Andalus Competitive Programming Online Site and Judge',
     tag: 'Backend',
-    img: './static/andalus-judge.png',
+    img: './static/andalus-judge.webp',
     client: 'ASTU-CSEC',
     short: 'A competitive programming platform developed to train students for ICPC by allowing automated code submission, evaluation, and contest hosting.',
     long: `
@@ -143,7 +143,7 @@ training at ASTU and is being scaled to support broader use across universities.
   {
     title: 'SocialNetwork API',
     tag: 'Backend',
-    img: './static/socialnetwork.jpeg',
+    img: './static/socialnetwork.webp',
     client: 'Freelance',
     short: 'A RESTful social network API with an autonomous bot to simulate user activity and test system behavior.',
     long: `
@@ -162,7 +162,7 @@ Technologies used include Python, Django, DRF, PostgreSQL, Docker, Docker Compos
   {
     title: 'Course Audit',
     tag: 'Web Tool',
-    img: './static/courseaudit.png',
+    img: './static/courseaudit.webp',
     client: 'ASTU CSE',
     short: 'Credit-hour tracker for ASTU CSE 2020 cohort.',
     long: `
@@ -179,7 +179,7 @@ and Technology University Computer Science and Engineering Department students.`
   {
     title: 'Calendar Conversion',
     tag: 'Java App',
-    img: './static/calendarconversion.png',
+    img: './static/calendarconversion.webp',
     client: 'University Project',
     short: 'GUI app converting Ethiopian ⇆ Gregorian ⇆ Hijri.',
     long: `
@@ -199,7 +199,7 @@ offers printable timetable views, making it useful for academic or scheduling pu
   {
     title: 'Amharic Digit Recognition',
     tag: 'CNN',
-    img: './static/amharicdigit.jpeg',
+    img: './static/amharicdigit.webp',
     client: 'Open-source',
     short: 'Handwritten Geʽez digit recognition using a CNN trained on a custom 50K-sample dataset.',
     long: `
@@ -218,7 +218,7 @@ for testing the model in real-world use cases.`,
   {
     title: 'ASTU Chatbot',
     tag: 'NLP',
-    img: './static/astuchatbot.jpeg',
+    img: './static/astuchatbot.webp',
     client: 'iCog-Labs',
     short: 'Chat bot answering FAQs about ASTU.',
     long: `
@@ -232,7 +232,7 @@ and can interact with users and supply that information when asked.`,
   {
     title: 'Student Performance Prediction',
     tag: 'ML',
-    img: './static/studentperf.jpeg',
+    img: './static/studentperf.webp',
     client: 'Research',
     short: 'ML model to predict department choice & GPA.',
     long: `

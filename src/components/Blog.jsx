@@ -25,7 +25,7 @@ const Blog = () => (
         {/* Featured post */}
         <div className="lg:col-span-5">
           <PostCard
-            image="./static/telebirr-integration.png"
+            image="./static/telebirr-integration.webp"
             date="Jun 6, 2023"
             title="How to Integrate Telebirr in Your Web App"
             excerpt="It offers a complete guide to integrating the Telebirr API with Python, from setup and registration to authentication, payment requests, and best practices for secure, reliable implementation."
@@ -38,7 +38,7 @@ const Blog = () => (
         {/* Two smaller posts */}
         <div className="lg:col-span-7 space-y-6">
           <PostCard
-            image="./static/competitive-programming-for-beginners.png"
+            image="./static/competitive-programming-for-beginners.webp"
             date="Nov 23, 2023"
             title="Competitive Programming for Beginners"
             excerpt="It provides a comprehensive overview of competitive programming—its fundamentals, key skills, learning resources, and practical applications in tech and interviews."
@@ -47,7 +47,7 @@ const Blog = () => (
           />
 
           <PostCard
-            image="./static/my-competitive-programming-journey.png"
+            image="./static/my-competitive-programming-journey.webp"
             date="Nov 21, 2023"
             title="My Competitive Programming Journey"
             excerpt="It highlights my competitive programming journey—ICPC finals, mentoring, building tools, and leading national initiatives—while shaping my tech career through projects, teaching, and startup leadership."

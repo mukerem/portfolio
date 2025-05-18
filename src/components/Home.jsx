@@ -11,7 +11,7 @@ const Home = () => (
             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary-200 to-secondary-200 dark:from-primary-800/40 dark:to-secondary-800/40 blur-md -translate-x-2 translate-y-2" />
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-2 border-white dark:border-gray-900">
               <img
-                src="/static/mukerem-professional.jpeg"
+                src="/static/mukerem-professional.webp"
                 alt="Mukerem Ali"
                 className="object-cover w-full h-full rounded-full"
                 decoding="async"

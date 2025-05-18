@@ -128,7 +128,7 @@ const testimonials = [
       'I am writing this letter to wholeheartedly recommend Mukerem for any opportunity or recognition that comes his way. Mukerem is not just a mentor, teacher, and friend, but a true genius whose contributions have left an indelible mark not only on me but also on the entire ASTU community and the broader developer community in our country.',
     name: 'Temkin Mengistu',
     role: 'Senior Software Developer',
-    img: './static/temkin-megistu.jpeg',
+    img: './static/temkin-megistu.webp',
     link: 'https://www.linkedin.com/in/mukerem/details/recommendations/?detailScreenTabIndex=0',
   },
   {
@@ -136,7 +136,7 @@ const testimonials = [
       'I am writing to strongly endorse Mukerem for any opportunity he decides to pursue. Mukerem has continually displayed excellent traits that make him an exceptional individual, both professionally and personally, throughout the time I have known him.',
     name: 'Mebatsion Sahle',
     role: 'Business Analyst · Data Scientist · Full-Stack Developer',
-    img: './static/mebatsion-sahle.jpeg',
+    img: './static/mebatsion-sahle.webp',
     link: 'https://www.linkedin.com/in/mukerem/details/recommendations/?detailScreenTabIndex=0',
   },
   {
@@ -144,7 +144,7 @@ const testimonials = [
       'I am immensely grateful to recommend Mukerem, whose mentorship and support have been pivotal in my professional development. Having known Mukerem since my early university days, I can attest to his extraordinary intelligence and his profound impact on those around him.',
     name: 'Ahmed Hibet',
     role: 'Software Developer @ Turing',
-    img: './static/ahmed-hibet.jpeg',
+    img: './static/ahmed-hibet.webp',
     link: 'https://www.linkedin.com/in/mukerem/details/recommendations/?detailScreenTabIndex=0',
   },
   {
@@ -152,7 +152,7 @@ const testimonials = [
       'I had the privilege of coaching Mukerem Ali in the Ethiopian ICPC. His skills as a competitive programmer were truly exceptional, culminating in the prestigious status of ICPC World-Finalist 2021.',
     name: 'Desta Zerihun',
     role: 'Distributed Systems Engineer · Tech Lead',
-    img: './static/desta-zerihun.jpeg',
+    img: './static/desta-zerihun.webp',
     link: 'https://www.linkedin.com/in/mukerem/details/recommendations/?detailScreenTabIndex=0',
   },
   {
@@ -160,7 +160,7 @@ const testimonials = [
       'Mukerem is a person with passion, commitment, ingenuity, friendship, and more. Beyond his academic excellence he reached the ICPC world finals, led a club, built numerous systems, and supported others with tutorials at every level.',
     name: 'Duguma Yeshitla',
     role: 'Researcher · Data Scientist · Full-Stack Developer',
-    img: './static/duguma-yeshitla.jpeg',
+    img: './static/duguma-yeshitla.webp',
     link: 'https://www.linkedin.com/in/mukerem/details/recommendations/?detailScreenTabIndex=0',
   },
 ];

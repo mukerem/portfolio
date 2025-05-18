@@ -44,8 +44,8 @@ const TechnicalSkills = () => (
             title="AI & Data‑Science"
             icon="/static/ai-brain.svg"
             items={[
-              ['RLHF / Human‑Eval', '/static/rlhf.jpeg'],
-              ['LLM Fine‑tuning', '/static/llm.jpeg'],
+              ['RLHF / Human‑Eval', '/static/rlhf.svg'],
+              ['LLM Fine‑tuning', '/static/llm.svg'],
               ['TensorFlow', '/static/tensorflow.svg'],
               ['PyTorch', '/static/pytorch.svg'],
             ]}

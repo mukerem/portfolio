@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Header.css';
-import Logo from '../assets/logo.png';
+import Logo from '../assets/logo.webp';
 
 const Header = () => (
   <header className="py-6 relative">
