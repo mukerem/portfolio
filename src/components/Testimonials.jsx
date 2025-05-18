@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect, useCallback } from 'react';
 import '../styles/Testimonials.css';
 
 /* ══════════════════════════════════════════════════════════════
@@ -19,7 +19,10 @@ export default function Testimonials() {
     setActive(idx);
   };
   const prev = () => slideTo((active - 1 + total) % total);
-  const next = () => slideTo((active + 1) % total);
+  // const next = () => slideTo((active + 1) % total);
+  const next = useCallback(() => {
+    slideTo((active + 1) % total);
+}, [active, total]);
 
   /* ------------------------------------------------------------
      keep indicator in sync when user drags / swipes
