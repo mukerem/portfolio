@@ -27,3 +27,5 @@ jobs:
           port: ${{ secrets.FTP_PORT }}
           local-dir: build/
           server-dir: ./
+          dangerous-clean-slate: true
+
