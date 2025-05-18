@@ -24,23 +24,8 @@ const useInitTheme = () => {
         }
       }
 
-      if (override) {
-        applyTheme(override);
-      } else {
-        try {
-          const stored = localStorage.getItem(key) || fallback;
-          const theme =
-            system && stored === 'system'
-              ? window.matchMedia('(prefers-color-scheme: dark)').matches
-                ? 'dark'
-                : 'light'
-              : stored;
-          applyTheme(theme);
-        } catch (e) {
-          // fallback silently
-        }
-      }
-    })('class', 'theme', 'system', null, ['light', 'dark'], null, true, true);
+      applyTheme(override); // <== force light mode
+    })('class', 'theme', 'light', 'light', ['light', 'dark'], null, true, true);
   }, []);
 };
 

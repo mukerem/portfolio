@@ -19,7 +19,7 @@ import ScrollToTop from './components/ScrollToTop';
 import useInitTheme from './hooks/useInitTheme';
 
 function App() {
-  useInitTheme();           // initialise light / dark mode
+  useInitTheme(); 
 
   return (
     <>

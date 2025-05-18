@@ -67,7 +67,7 @@ const Experience = () => (
             side="right"
             dotColor="primary"
             period="Feb 2025 – Present"
-            title="Data & AI Engineer"
+            title="Data & AI Engineer (Part time)"
             company="Nexsis Analytics"
             location="Toronto, Canada Remote"
             bullets={[
