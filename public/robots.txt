@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mukerem.com/sitemap.xml
