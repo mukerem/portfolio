@@ -6,30 +6,29 @@ Welcome to my personal portfolio website! I’m **Mukerem Ali**, a Senior Backen
 
 ## 🚀 Live Demo
 
-👉 https://your-domain.com  
-*(Replace with your actual URL)*
+👉 https://mukerem.com
 
 ---
 
 ## 🧰 Tech Stack
 
-- **Back-end (projects):**  
-  - Django / Django REST Framework  
-  - FastAPI  
-  - Flask  
-- **Data & AI:**  
-  - Python (NumPy, Pandas, scikit-learn, TensorFlow, Keras)  
-  - Reinforcement Learning from Human Feedback (RLHF)  
-- **DevOps & Hosting:**  
-  - Docker 
+- **Back-end (projects):**
+  - Django / Django REST Framework
+  - FastAPI
+  - Flask
+- **Data & AI:**
+  - Python (NumPy, Pandas, scikit-learn, TensorFlow, Keras)
+  - Reinforcement Learning from Human Feedback (RLHF)
+- **DevOps & Hosting:**
+  - Docker
   - AWS
-  - GitHub Actions / CI  
-- **Front-end:**  
-  - React  
-  - Tailwind CSS  
-- **Others:**  
-  - PostgreSQL, MongoDB  
-  - Redis, Celery  
+  - GitHub Actions / CI
+- **Front-end:**
+  - React
+  - Tailwind CSS
+- **Others:**
+  - PostgreSQL, MongoDB
+  - Redis, Celery
 
 ---
 
