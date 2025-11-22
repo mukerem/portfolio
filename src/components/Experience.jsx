@@ -1,5 +1,5 @@
-import React from 'react';
-import '../styles/Experience.css';
+import React from "react";
+import "../styles/Experience.css";
 
 /* ═════════════════════════════════════════════════════════════
    EXPERIENCE  ▸  main section
@@ -39,12 +39,12 @@ const Experience = () => (
             company="Turing"
             location="USA Remote"
             bullets={[
-              'Led a team of AI Engineers in evaluating LLM outputs using detailed rubrics and structured human feedback.',
-              'Reviewed and validated task quality to ensure alignment with rubric guidelines and research objectives.',
-              'Collaborated with researchers to define task instructions, identify ambiguous cases, and refine evaluation criteria.',
-              'Designed datasets targeting edge cases such as prompt injection, adversarial queries, and harmful content detection.',
-              'Contributed to Agentic AI systems by designing interaction flows and generating evaluation data.',
-              'Mentored junior engineers, fostering their growth in a dynamic, fast-evolving AI research environment.',
+              "Led a team of AI Engineers in evaluating LLM outputs using detailed rubrics and structured human feedback.",
+              "Reviewed and validated task quality to ensure alignment with rubric guidelines and research objectives.",
+              "Collaborated with researchers to define task instructions, identify ambiguous cases, and refine evaluation criteria.",
+              "Designed datasets targeting edge cases such as prompt injection, adversarial queries, and harmful content detection.",
+              "Contributed to Agentic AI systems by designing interaction flows and generating evaluation data.",
+              "Mentored junior engineers, fostering their growth in a dynamic, fast-evolving AI research environment.",
             ]}
           />
           <TimelineItem
@@ -55,25 +55,10 @@ const Experience = () => (
             company="Turing"
             location="USA Remote"
             bullets={[
-              'Designed and curated high-quality datasets for training and fine-tuning large language models.',
-              'Created diverse prompt–completion pairs for supervised fine-tuning and instruction tuning.',
-              'Built RLHF pipelines by collecting and ranking human feedback, and trained reward models to align outputs with human preferences.',
-              'Solved a wide range of algorithmic problems from various competitive programming platforms using Python, providing detailed, well-structured solutions and explanations focused on efficiency, edge cases, and optimal design.'
-            ]}
-          />
-
-          {/* ── Nexsis Analytics */}
-          <TimelineItem
-            side="right"
-            dotColor="primary"
-            period="Feb 2025 – Present"
-            title="Data & AI Engineer (Part time)"
-            company="Nexsis Analytics"
-            location="Toronto, Canada Remote"
-            bullets={[
-              'Developed scalable data processing workflows on Databricks using PySpark for cleaning, transforming, and aggregating large retail transaction datasets.',
-              'Fine-tuned open-source LLMs using LoRA on domain-specific corpora to enable high-accuracy document Q&A systems tailored for financial and business data.',
-              'Deployed and evaluated fine-tuned models for downstream tasks such as semantic search, multi-turn Q&A, and data extraction across structured and unstructured sources.'
+              "Designed and curated high-quality datasets for training and fine-tuning large language models.",
+              "Created diverse prompt–completion pairs for supervised fine-tuning and instruction tuning.",
+              "Built RLHF pipelines by collecting and ranking human feedback, and trained reward models to align outputs with human preferences.",
+              "Solved a wide range of algorithmic problems from various competitive programming platforms using Python, providing detailed, well-structured solutions and explanations focused on efficiency, edge cases, and optimal design.",
             ]}
           />
 
@@ -86,11 +71,11 @@ const Experience = () => (
             company="Toptech IT Solutions PLC"
             location="Addis Ababa, Ethiopia"
             bullets={[
-              'Co-founded the company and led the backend engineering team, contributing to project planning and technical decision-making to align development with business goals.',
-              'Designed and developed scalable backend systems using Django, with a focus on modular architecture, performance, and maintainable RESTful APIs.',
-              'Built automation tools and web scraping pipelines to collect and process data from multiple external sources for analytics and platform features.',
-              'Containerized applications using Docker and managed CI/CD pipelines to ensure smooth and consistent deployment across development, staging, and production environments.',
-              'Oversaw system testing, performance tuning, debugging, and maintenance to ensure stability, reliability, and high application performance post-deployment.'
+              "Co-founded the company and led the backend engineering team, contributing to project planning and technical decision-making to align development with business goals.",
+              "Designed and developed scalable backend systems using Django, with a focus on modular architecture, performance, and maintainable RESTful APIs.",
+              "Built automation tools and web scraping pipelines to collect and process data from multiple external sources for analytics and platform features.",
+              "Containerized applications using Docker and managed CI/CD pipelines to ensure smooth and consistent deployment across development, staging, and production environments.",
+              "Oversaw system testing, performance tuning, debugging, and maintenance to ensure stability, reliability, and high application performance post-deployment.",
             ]}
           />
 
@@ -103,9 +88,9 @@ const Experience = () => (
             company="Scoville Co., Ltd."
             location="Tokyo, Japan"
             bullets={[
-              'Contributed to a machine learning project on text anonymization, developing algorithms to detect and mask sensitive entities in unstructured text data.',
-              'Gained hands-on experience working in a multicultural environment with colleagues from 17+ nationalities, enhancing communication and cross-cultural collaboration skills.',
-              'Collaborated with engineers and researchers on real-world NLP challenges, applying privacy-preserving techniques and best practices in ethical AI development.'
+              "Contributed to a machine learning project on text anonymization, developing algorithms to detect and mask sensitive entities in unstructured text data.",
+              "Gained hands-on experience working in a multicultural environment with colleagues from 17+ nationalities, enhancing communication and cross-cultural collaboration skills.",
+              "Collaborated with engineers and researchers on real-world NLP challenges, applying privacy-preserving techniques and best practices in ethical AI development.",
             ]}
           />
 
@@ -118,10 +103,10 @@ const Experience = () => (
             company="Ethiopian ICPC (EtCPC)"
             location="Nationwide"
             bullets={[
-              'Created original problem sets for ICPC local and regional competitions, ensuring clarity, balanced difficulty, and relevance to core algorithmic concepts.',
-              'Mentored and monitored students in competitive programming contests, delivering tutorials on algorithms, programming languages, and effective problem-solving techniques.',
-              'Organized annual ICPC events and mock contests, managing logistics, scheduling, and coordination with universities and participants.',
-              'Set up the competition environment by installing operating systems, compilers, editors, and configuring machines to meet contest standards and fairness requirements.'
+              "Created original problem sets for ICPC local and regional competitions, ensuring clarity, balanced difficulty, and relevance to core algorithmic concepts.",
+              "Mentored and monitored students in competitive programming contests, delivering tutorials on algorithms, programming languages, and effective problem-solving techniques.",
+              "Organized annual ICPC events and mock contests, managing logistics, scheduling, and coordination with universities and participants.",
+              "Set up the competition environment by installing operating systems, compilers, editors, and configuring machines to meet contest standards and fairness requirements.",
             ]}
           />
 
@@ -134,10 +119,10 @@ const Experience = () => (
             company="AddisCoder"
             location="Addis Ababa, Ethiopia"
             bullets={[
-              'Instructed over 100 top-performing high school students in Python, data structures, and problem-solving, fostering strong algorithmic thinking and programming foundations.',
-              'Customized the curriculum, created detailed solution notes, and guided students through hands-on coding sessions to develop analytical and problem-solving skills.',
-              'Collaborated with teaching assistants from top global tech companies and universities, sharing real-world software engineering experience and inspiring students through mentorship.',
-              'Provided personalized feedback, university application support, and recommendations—contributing to 37% of students earning scholarships at top international universities.',
+              "Instructed over 100 top-performing high school students in Python, data structures, and problem-solving, fostering strong algorithmic thinking and programming foundations.",
+              "Customized the curriculum, created detailed solution notes, and guided students through hands-on coding sessions to develop analytical and problem-solving skills.",
+              "Collaborated with teaching assistants from top global tech companies and universities, sharing real-world software engineering experience and inspiring students through mentorship.",
+              "Provided personalized feedback, university application support, and recommendations—contributing to 37% of students earning scholarships at top international universities.",
             ]}
           />
 
@@ -150,9 +135,9 @@ const Experience = () => (
             company="Adama Science and Technology University"
             location="Adama, Ethiopia"
             bullets={[
-              'Assisted in teaching undergraduate courses including Python programming, Microcomputer & Interface, and Distributed Programming.',
-              'Led lab sessions, provided one-on-one guidance, and helped students grasp core programming and system-level concepts.',
-              'Supported practical sessions and debugging exercises, reinforcing course material through hands-on learning experiences while pursuing my MSc in Computer Science.',
+              "Assisted in teaching undergraduate courses including Python programming, Microcomputer & Interface, and Distributed Programming.",
+              "Led lab sessions, provided one-on-one guidance, and helped students grasp core programming and system-level concepts.",
+              "Supported practical sessions and debugging exercises, reinforcing course material through hands-on learning experiences while pursuing my MSc in Computer Science.",
             ]}
           />
 
@@ -165,9 +150,9 @@ const Experience = () => (
             company="ASTU-CSEC"
             location="Adama, Ethiopia"
             bullets={[
-              'Delivered tutorials on <strong>algorithms, data structures, and competitive programming</strong> to club members and freshman university students, covering languages like Python, C++, Java, and foundational math.',
-              'Designed and developed <strong>Andalus Competitive Programming Judge</strong>, Ethiopia’s first open-source contest platform, currently used by the club and other university communities.',
-              'Served as <strong>Head of Capacity Building</strong>, overseeing tutorials, seminars, and educational content creation, including videos and structured learning materials to support student growth.',
+              "Delivered tutorials on <strong>algorithms, data structures, and competitive programming</strong> to club members and freshman university students, covering languages like Python, C++, Java, and foundational math.",
+              "Designed and developed <strong>Andalus Competitive Programming Judge</strong>, Ethiopia’s first open-source contest platform, currently used by the club and other university communities.",
+              "Served as <strong>Head of Capacity Building</strong>, overseeing tutorials, seminars, and educational content creation, including videos and structured learning materials to support student growth.",
             ]}
           />
 
@@ -180,9 +165,9 @@ const Experience = () => (
             company="iCog‑Labs"
             location="Addis Ababa, Ethiopia"
             bullets={[
-              'Implemented an intent classification module for the Sophia the Robot chatbot to enable accurate understanding of user queries.',
-              'Contributed to the development of a chatbot that delivers automated responses and university information about Adama Science and Technology University.',
-              'Gained valuable hands-on experience during my first internship, collaborating with an experienced development team and applying NLP concepts in a real-world project.'           
+              "Implemented an intent classification module for the Sophia the Robot chatbot to enable accurate understanding of user queries.",
+              "Contributed to the development of a chatbot that delivers automated responses and university information about Adama Science and Technology University.",
+              "Gained valuable hands-on experience during my first internship, collaborating with an experienced development team and applying NLP concepts in a real-world project.",
             ]}
           />
         </div>
@@ -194,26 +179,56 @@ const Experience = () => (
 /* ═════════════════════════════════════════════════════════════
    Timeline item  – helper component
 ════════════════════════════════════════════════════════════════ */
-function TimelineItem({ side, dotColor, period, title, company, location, bullets }) {
-  const metaCol = side === 'right' ? 'mb-8 md:mb-0 md:order-2 md:pl-10' : 'mb-8 md:mb-0 md:text-right md:pr-10';
-  const descCol = side === 'right' ? 'md:order-1 md:pr-10' : 'md:pl-10';
+function TimelineItem({
+  side,
+  dotColor,
+  period,
+  title,
+  company,
+  location,
+  bullets,
+}) {
+  const metaCol =
+    side === "right"
+      ? "mb-8 md:mb-0 md:order-2 md:pl-10"
+      : "mb-8 md:mb-0 md:text-right md:pr-10";
+  const descCol = side === "right" ? "md:order-1 md:pr-10" : "md:pl-10";
 
   return (
     <div className="relative">
       {/* dot on centre line */}
-      <div className={`hidden md:block absolute left-1/2 top-0 w-5 h-5 rounded-full bg-${dotColor}-500 border-4 border-white dark:border-gray-900 -translate-x-1/2 z-10`} />
+      <div
+        className={`hidden md:block absolute left-1/2 top-0 w-5 h-5 rounded-full bg-${dotColor}-500 border-4 border-white dark:border-gray-900 -translate-x-1/2 z-10`}
+      />
 
       <div className="md:grid md:grid-cols-2 gap-8 items-start">
         {/* meta */}
         <div className={metaCol}>
-          <span className={`inline-block px-3 py-1 bg-${dotColor}-50 dark:bg-${dotColor}-900/20 text-${dotColor}-600 dark:text-${dotColor}-400 rounded-md text-sm font-medium mb-2`}>
+          <span
+            className={`inline-block px-3 py-1 bg-${dotColor}-50 dark:bg-${dotColor}-900/20 text-${dotColor}-600 dark:text-${dotColor}-400 rounded-md text-sm font-medium mb-2`}
+          >
             {period}
           </span>
           <h3 className="text-xl font-bold mb-1">{title}</h3>
-          <div className={`flex items-center text-gray-500 dark:text-gray-400 ${side === 'left' ? 'md:justify-end' : ''} mb-4`}>
-            <img src="./static/location-svgrepo-com.svg" alt="" className="mr-1" width={16} height={16} />
+          <div
+            className={`flex items-center text-gray-500 dark:text-gray-400 ${
+              side === "left" ? "md:justify-end" : ""
+            } mb-4`}
+          >
+            <img
+              src="./static/location-svgrepo-com.svg"
+              alt=""
+              className="mr-1"
+              width={16}
+              height={16}
+            />
             At&nbsp;
-            <a href={companyLinks[company] || '#'} target="_blank" rel="noopener noreferrer" className={`mx-1 text-${dotColor}-600 dark:text-${dotColor}-400 hover:underline`}>
+            <a
+              href={companyLinks[company] || "#"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`mx-1 text-${dotColor}-600 dark:text-${dotColor}-400 hover:underline`}
+            >
               {company}
             </a>
             <span className="mx-1">&nbsp;</span>
@@ -222,7 +237,9 @@ function TimelineItem({ side, dotColor, period, title, company, location, bullet
         </div>
 
         {/* description */}
-        <div className={`${descCol} bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-100 dark:border-gray-700/50 shadow-sm hover:shadow-md transition`}>
+        <div
+          className={`${descCol} bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-100 dark:border-gray-700/50 shadow-sm hover:shadow-md transition`}
+        >
           <ul className="space-y-2 text-gray-500 dark:text-gray-300">
             {bullets.map((b) => (
               <li key={b} className="flex">
@@ -239,15 +256,16 @@ function TimelineItem({ side, dotColor, period, title, company, location, bullet
 
 /* company → homepage */
 const companyLinks = {
-  Turing: 'https://www.turing.com/',
-  'Nexsis Analytics': 'https://www.nexsis.ca/',
-  'Toptech IT Solutions PLC': 'https://toptech.et/',
-  'Scoville Co., Ltd.': 'https://sc0ville.com/',
-  'Ethiopian ICPC (EtCPC)': 'https://www.linkedin.com/company/ethiopian-collegiate-programming-contest/',
-  AddisCoder: 'https://addiscoder.com/',
-  'iCog‑Labs': 'https://icog-labs.com/',
-  'ASTU CSEC': 'https://et.linkedin.com/company/csec-astu',
-  'Adama Science & Technology Univ.': 'https://astu.edu.et/',
+  Turing: "https://www.turing.com/",
+  "Nexsis Analytics": "https://www.nexsis.ca/",
+  "Toptech IT Solutions PLC": "https://toptech.et/",
+  "Scoville Co., Ltd.": "https://sc0ville.com/",
+  "Ethiopian ICPC (EtCPC)":
+    "https://www.linkedin.com/company/ethiopian-collegiate-programming-contest/",
+  AddisCoder: "https://addiscoder.com/",
+  "iCog‑Labs": "https://icog-labs.com/",
+  "ASTU CSEC": "https://et.linkedin.com/company/csec-astu",
+  "Adama Science & Technology Univ.": "https://astu.edu.et/",
 };
 
 export default Experience;

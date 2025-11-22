@@ -1,12 +1,12 @@
-import React, { useRef, useState, useEffect, useCallback } from 'react';
-import '../styles/Testimonials.css';
+import React, { useRef, useState, useEffect, useCallback } from "react";
+import "../styles/Testimonials.css";
 
 /* ══════════════════════════════════════════════════════════════
    MAIN SECTION
    ══════════════════════════════════════════════════════════════ */
 export default function Testimonials() {
-  const viewportRef = useRef(null);           // <div> that scrolls horizontally
-  const [active, setActive] = useState(0);    // index of current slide
+  const viewportRef = useRef(null); // <div> that scrolls horizontally
+  const [active, setActive] = useState(0); // index of current slide
   const total = testimonials.length;
 
   /* ------------------------------------------------------------
@@ -15,14 +15,14 @@ export default function Testimonials() {
   const slideTo = (idx) => {
     const vp = viewportRef.current;
     if (!vp) return;
-    vp.scrollTo({ left: idx * vp.clientWidth, behavior: 'smooth' });
+    vp.scrollTo({ left: idx * vp.clientWidth, behavior: "smooth" });
     setActive(idx);
   };
   const prev = () => slideTo((active - 1 + total) % total);
   // const next = () => slideTo((active + 1) % total);
   const next = useCallback(() => {
     slideTo((active + 1) % total);
-}, [active, total]);
+  }, [active, total]);
 
   /* ------------------------------------------------------------
      keep indicator in sync when user drags / swipes
@@ -34,8 +34,8 @@ export default function Testimonials() {
       const idx = Math.round(vp.scrollLeft / vp.clientWidth);
       setActive(idx);
     };
-    vp.addEventListener('scroll', onScroll, { passive: true });
-    return () => vp.removeEventListener('scroll', onScroll);
+    vp.addEventListener("scroll", onScroll, { passive: true });
+    return () => vp.removeEventListener("scroll", onScroll);
   }, []);
 
   /* ------------------------------------------------------------
@@ -50,8 +50,8 @@ export default function Testimonials() {
     const pause = () => (paused = true);
     const resume = () => (paused = false);
 
-    vp.addEventListener('mouseenter', pause);
-    vp.addEventListener('mouseleave', resume);
+    vp.addEventListener("mouseenter", pause);
+    vp.addEventListener("mouseleave", resume);
 
     const id = setInterval(() => {
       if (!paused) next();
@@ -59,8 +59,8 @@ export default function Testimonials() {
 
     return () => {
       clearInterval(id);
-      vp.removeEventListener('mouseenter', pause);
-      vp.removeEventListener('mouseleave', resume);
+      vp.removeEventListener("mouseenter", pause);
+      vp.removeEventListener("mouseleave", resume);
     };
   }, [next]);
 
@@ -102,8 +102,8 @@ export default function Testimonials() {
                   onClick={() => slideTo(i)}
                   className={`transition-all rounded-full ${
                     active === i
-                      ? 'bg-primary-500 w-6 h-3'
-                      : 'bg-gray-300 dark:bg-gray-600 w-3 h-3 hover:bg-gray-400 dark:hover:bg-gray-500'
+                      ? "bg-primary-500 w-6 h-3"
+                      : "bg-gray-300 dark:bg-gray-600 w-3 h-3 hover:bg-gray-400 dark:hover:bg-gray-500"
                   }`}
                 />
               ))}
@@ -125,43 +125,51 @@ export default function Testimonials() {
 const testimonials = [
   {
     quote:
-      'I am writing this letter to wholeheartedly recommend Mukerem for any opportunity or recognition that comes his way. Mukerem is not just a mentor, teacher, and friend, but a true genius whose contributions have left an indelible mark not only on me but also on the entire ASTU community and the broader developer community in our country.',
-    name: 'Temkin Mengistu',
-    role: 'Senior Software Developer',
-    img: './static/temkin-megistu.webp',
-    link: 'https://www.linkedin.com/in/mukerem/details/recommendations/?detailScreenTabIndex=0',
+      "During the two years I managed Mukerem at Turing, he became my go-to person for solving the kinds of problems that don't have an obvious answer. His background as an ICPC World Finalist is evident in his day-to-day work: he's quick at understanding complex systems, rigorous in his thinking, and remains calm when others are struggling.",
+    name: "Md Fahim Arefin",
+    role: "Senior Software Engineer",
+    img: "./static/fahim-arefin.webp",
+    link: "https://www.linkedin.com/in/mukerem/details/recommendations/?detailScreenTabIndex=0",
   },
   {
     quote:
-      'I am writing to strongly endorse Mukerem for any opportunity he decides to pursue. Mukerem has continually displayed excellent traits that make him an exceptional individual, both professionally and personally, throughout the time I have known him.',
-    name: 'Mebatsion Sahle',
-    role: 'Business Analyst · Data Scientist · Full-Stack Developer',
-    img: './static/mebatsion-sahle.webp',
-    link: 'https://www.linkedin.com/in/mukerem/details/recommendations/?detailScreenTabIndex=0',
+      "I am writing this letter to wholeheartedly recommend Mukerem for any opportunity or recognition that comes his way. Mukerem is not just a mentor, teacher, and friend, but a true genius whose contributions have left an indelible mark not only on me but also on the entire ASTU community and the broader developer community in our country.",
+    name: "Temkin Mengistu",
+    role: "Senior Software Developer",
+    img: "./static/temkin-megistu.webp",
+    link: "https://www.linkedin.com/in/mukerem/details/recommendations/?detailScreenTabIndex=0",
   },
   {
     quote:
-      'I am immensely grateful to recommend Mukerem, whose mentorship and support have been pivotal in my professional development. Having known Mukerem since my early university days, I can attest to his extraordinary intelligence and his profound impact on those around him.',
-    name: 'Ahmed Hibet',
-    role: 'Software Developer @ Turing',
-    img: './static/ahmed-hibet.webp',
-    link: 'https://www.linkedin.com/in/mukerem/details/recommendations/?detailScreenTabIndex=0',
+      "I am writing to strongly endorse Mukerem for any opportunity he decides to pursue. Mukerem has continually displayed excellent traits that make him an exceptional individual, both professionally and personally, throughout the time I have known him.",
+    name: "Mebatsion Sahle",
+    role: "Business Analyst · Data Scientist · Full-Stack Developer",
+    img: "./static/mebatsion-sahle.webp",
+    link: "https://www.linkedin.com/in/mukerem/details/recommendations/?detailScreenTabIndex=0",
   },
   {
     quote:
-      'I had the privilege of coaching Mukerem Ali in the Ethiopian ICPC. His skills as a competitive programmer were truly exceptional, culminating in the prestigious status of ICPC World-Finalist 2021.',
-    name: 'Desta Zerihun',
-    role: 'Distributed Systems Engineer · Tech Lead',
-    img: './static/desta-zerihun.webp',
-    link: 'https://www.linkedin.com/in/mukerem/details/recommendations/?detailScreenTabIndex=0',
+      "I am immensely grateful to recommend Mukerem, whose mentorship and support have been pivotal in my professional development. Having known Mukerem since my early university days, I can attest to his extraordinary intelligence and his profound impact on those around him.",
+    name: "Ahmed Hibet",
+    role: "Software Developer @ Turing",
+    img: "./static/ahmed-hibet.webp",
+    link: "https://www.linkedin.com/in/mukerem/details/recommendations/?detailScreenTabIndex=0",
   },
   {
     quote:
-      'Mukerem is a person with passion, commitment, ingenuity, friendship, and more. Beyond his academic excellence he reached the ICPC world finals, led a club, built numerous systems, and supported others with tutorials at every level.',
-    name: 'Duguma Yeshitla',
-    role: 'Researcher · Data Scientist · Full-Stack Developer',
-    img: './static/duguma-yeshitla.webp',
-    link: 'https://www.linkedin.com/in/mukerem/details/recommendations/?detailScreenTabIndex=0',
+      "I had the privilege of coaching Mukerem Ali in the Ethiopian ICPC. His skills as a competitive programmer were truly exceptional, culminating in the prestigious status of ICPC World-Finalist 2021.",
+    name: "Desta Zerihun",
+    role: "Distributed Systems Engineer · Tech Lead",
+    img: "./static/desta-zerihun.webp",
+    link: "https://www.linkedin.com/in/mukerem/details/recommendations/?detailScreenTabIndex=0",
+  },
+  {
+    quote:
+      "Mukerem is a person with passion, commitment, ingenuity, friendship, and more. Beyond his academic excellence he reached the ICPC world finals, led a club, built numerous systems, and supported others with tutorials at every level.",
+    name: "Duguma Yeshitla",
+    role: "Researcher · Data Scientist · Full-Stack Developer",
+    img: "./static/duguma-yeshitla.webp",
+    link: "https://www.linkedin.com/in/mukerem/details/recommendations/?detailScreenTabIndex=0",
   },
 ];
 
@@ -244,14 +252,30 @@ const CircleButton = ({ onClick, ariaLabel, children }) => (
    ICONS
    ══════════════════════════════════════════════════════════════ */
 const QuoteIcon = (props) => (
-  <svg {...props} fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+  <svg
+    {...props}
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={2}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    viewBox="0 0 24 24"
+  >
     <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" />
     <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" />
   </svg>
 );
 
 const LinkedInIcon = (props) => (
-  <svg {...props} fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+  <svg
+    {...props}
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={2}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    viewBox="0 0 24 24"
+  >
     <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
     <rect x="2" y="9" width="4" height="12" />
     <circle cx="4" cy="4" r="2" />
@@ -259,14 +283,30 @@ const LinkedInIcon = (props) => (
 );
 
 const ArrowLeftIcon = (props) => (
-  <svg {...props} fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+  <svg
+    {...props}
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={2}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    viewBox="0 0 24 24"
+  >
     <path d="m12 19-7-7 7-7" />
     <path d="M19 12H5" />
   </svg>
 );
 
 const ArrowRightIcon = (props) => (
-  <svg {...props} fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+  <svg
+    {...props}
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={2}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    viewBox="0 0 24 24"
+  >
     <path d="M5 12h14" />
     <path d="m12 5 7 7-7 7" />
   </svg>
